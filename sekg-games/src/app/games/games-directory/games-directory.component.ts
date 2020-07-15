@@ -33,12 +33,18 @@ export class GamesDirectoryComponent implements OnInit {
     this.games = games;
   } 
 
+  errorHandler = (error: Object) => {
+    this.finishLoading();
+    this.games = [];
+    console.log(error);   
+  }
+
   searchHandler(query: string) :void {
     if (!query) return;
     this.cleanGames();
     this.startLoading();
     this.apiService.searchGames(query)
-      .subscribe(this.finishSearchHandler);
+      .subscribe(this.finishSearchHandler, this.errorHandler);
   }
 
   ngOnInit(): void {
