@@ -1,0 +1,15 @@
+<div class="search-container">
+    <input
+        #search
+        (keyup)="inputChangeHandler(search.value)"
+        (keyup.enter)="onSearchClickHandler($event)"
+        type="text"
+        class="search-input"
+    />
+    <button
+        class="search-button"
+        (click)="onSearchClickHandler($event)">
+        <span *ngIf="loading">...</span>
+        <span *ngIf="!loading">Find!</span>
+    </button>
+</div>

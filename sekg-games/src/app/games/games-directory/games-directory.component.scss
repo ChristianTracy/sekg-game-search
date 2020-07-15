@@ -1,0 +1,20 @@
+.directory-container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    .directory-header {
+        margin-bottom: 50px;
+        border-bottom: 5px solid #EAD704;
+        h1 {
+            font-family: 'Press Start 2P';
+            color: white;
+            font-size: 40px;
+        }
+    }
+    .search-box {
+        margin-bottom: 50px;
+    }
+}

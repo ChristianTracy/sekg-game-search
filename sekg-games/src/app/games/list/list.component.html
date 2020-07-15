@@ -1,0 +1,14 @@
+<div *ngIf="games.length" class="results-wrapper">
+    <div class="game-container" *ngFor="let game of games">
+        <div class="game-image-container">
+            <img [src]="game.imgSrc" />
+        </div>
+        <h2>{{ game.name }}</h2>
+        <p>Release date: {{ game.releaseDate }}</p>
+    </div> 
+</div>
+
+<div class="empty-state" *ngIf="!games.length && !loading">
+    <img src="/assets/img/dinosaur.gif" alt="empty-state">
+    <h3>Nothing to see here</h3>
+</div>  

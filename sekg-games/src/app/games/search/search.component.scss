@@ -1,0 +1,33 @@
+.search-container {
+    display: flex;
+    align-items: center;
+
+    .search-input { 
+        padding: 5px;
+        background-color: #424243;
+        border: none;
+        height: 50px;
+        width: 500px;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        &:active {
+            border: none;
+        }
+    }
+    
+    .search-button{
+        font-family: 'Press Start 2P';
+        font-size: 12px;
+        height: 50px;
+        width: 100px;
+        background: none;
+        color: #FFFFFF;
+        border: 4px #424243 solid;
+        padding: 0;
+        &:hover {
+          cursor: pointer;  
+        }
+    }
+}
+

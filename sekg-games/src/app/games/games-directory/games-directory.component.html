@@ -1,0 +1,16 @@
+<div class="directory-container">
+    <div class="directory-header">
+        <h1>
+            GAME SEARCH
+        </h1>
+    </div>
+    <search-box
+        class="search-box"
+        (searchEvent)="searchHandler($event)"
+        [loading]="loading"
+        ></search-box>
+    <app-list
+        [games]="games"
+        [loading]="loading"
+    ></app-list>
+</div>

@@ -1,0 +1,22 @@
+version: '3'
+services:
+  api:
+    build:
+      context: ./sekg-games-backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    container_name: sekg-games-backend
+    volumes:
+       - ./sekg-games-backend:/usr/src/app/api
+       - /usr/src/app/api/node_modules
+  web:
+    build:
+      context: ./sekg-games
+      dockerfile: Dockerfile
+    ports:
+      - "4200:4200"
+    container_name: sekg-games-web
+    volumes:
+       - ./sekg-games:/usr/src/app/web
+       - /usr/src/app/web/node_modules

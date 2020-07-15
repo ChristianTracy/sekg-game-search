@@ -1,0 +1,25 @@
+{
+  "name": "sekg-games-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon .",
+    "generate:docs:html": "jsdoc -d docs -r src",
+    "generate:docs:md": "jsdoc2md src/**/*.js > APIDOCS.md",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "@koa/router": "^9.3.1",
+    "axios": "^0.19.2",
+    "koa": "^2.13.0"
+  },
+  "devDependencies": {
+    "jsdoc": "^3.6.4",
+    "jsdoc-to-markdown": "^6.0.1",
+    "nodemon": "^2.0.4"
+  }
+}
