@@ -1,16 +1,32 @@
 [BACK](../README.md)
 # SEKG GAMES BACKEND 🤖
 
-This api uses [KOA](https://koajs.com) as server framework.
+Usefule tools:
 
+- [KOA](https://koajs.com) as server framework.
+- [SEQUELIZE](https://sequelize.org) as ORM
 
 ## Get your backend running 🏃
 
 If you are using docker, remember.. less steps! [follow this instructions](../README.md)
 
+...
+
 But if you don't have docker prepared, no problem!
 
-You can use this:
+**You'll need a local postgress instance first**
+
+### check the `env` file 
+
+Configure your local postgress if you need it using url string
+
+```
+DATABASE_URL=postgres://sekg:sekg@localhost:5432/sekg
+PORT=8000
+```
+
+Then you can do this:
+
 ```
 npm install
 npm run start

@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon .",
+    "db:migrate": "sequelize db:migrate",
+    "db:migration:generate": "sequelize migration:generate",
+    "db:model:generate": "sequelize model:generate",
+    "start": "npm run db:migrate && nodemon .",
     "generate:docs:html": "jsdoc -d docs -r src",
     "generate:docs:md": "jsdoc2md src/**/*.js > APIDOCS.md",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,7 +18,12 @@
     "@koa/cors": "^3.1.0",
     "@koa/router": "^9.3.1",
     "axios": "^0.19.2",
-    "koa": "^2.13.0"
+    "dotenv": "^8.2.0",
+    "koa": "^2.13.0",
+    "pg": "^8.3.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.3.3",
+    "sequelize-cli": "^6.2.0"
   },
   "devDependencies": {
     "jsdoc": "^3.6.4",

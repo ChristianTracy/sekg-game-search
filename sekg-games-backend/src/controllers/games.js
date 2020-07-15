@@ -3,6 +3,7 @@
 */
 
 const gamesService = require ('../services/games');
+const models = require('../models'); // models could be used inside controllers (or repositories)
 
 /**
  * Uses a service to look for a game and send the response

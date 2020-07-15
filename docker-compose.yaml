@@ -9,7 +9,9 @@ services:
     container_name: sekg-games-backend
     volumes:
        - ./sekg-games-backend:/usr/src/app/api
-       - /usr/src/app/api/node_modules
+       - ./sekg-games-backend/node_modules:/usr/src/app/api/node_modules
+    env_file:
+      - api.env
   web:
     build:
       context: ./sekg-games
@@ -19,4 +21,13 @@ services:
     container_name: sekg-games-web
     volumes:
        - ./sekg-games:/usr/src/app/web
-       - /usr/src/app/web/node_modules
+       - ./sekg-games/node_modules:/usr/src/app/web/node_modules
+  db:
+    image: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    env_file:
+      - db.env      
+
+      
