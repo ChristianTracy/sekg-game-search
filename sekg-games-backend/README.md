@@ -23,7 +23,6 @@ That's it! you have your own backend running on [http://localhost:8000](http://l
 **HINT**
 This project is using [nodemon](https://nodemon.io). What does it mean? **free livereload! 🔄**
 
-____
 
 ## API Docs 🗒️
 
@@ -46,13 +45,11 @@ To update/gerate html api docs file
 ```
 npm run generate:docs:html
 ```
-____
 
 ## Games source 🎮
 
-The api internally uses [RAWG](https://rawg.io/apidocs)
+The API internally uses [RAWG](https://rawg.io/apidocs)
 
-____
 
 ## Endpoints 🔍
 

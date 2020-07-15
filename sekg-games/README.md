@@ -19,3 +19,9 @@ npm run start
 That's it! you have your own backend running on [http://localhost:4200](http://localhost:4200)
 
 **Note**: this app was made using NodeJS version 12.
+
+## Screeshots 📷
+
+![sekg-game-search](screenshots/search.png)
+____
+![sekg-game-search](screenshots/empty.png)

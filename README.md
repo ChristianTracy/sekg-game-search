@@ -1,8 +1,8 @@
 # SEKG GAME SEARCH
 
-All that you need to know about projects:
+All you need to know about projects:
 - [BACKEND](sekg-games-backend/README.md)
-- [FROTEND](sekg-games/README.md)
+- [FRONTEND](sekg-games/README.md)
 
 
 ## WITH DOCKER COMPOSE 🤖
@@ -22,7 +22,7 @@ Containers are using `node:12` image.
 
 ## WITHOUT DOCKER 🛠️
 
-You have to run backend and frotend services:
+You have to run backend and frontend services:
 - API instructions [HERE](sekg-games-backend/README.md)
 - WEB instructions [HERE](sekg-games/README.md)
 
